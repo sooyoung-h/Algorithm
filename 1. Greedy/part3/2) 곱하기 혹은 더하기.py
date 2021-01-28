@@ -16,3 +16,17 @@ for i in range(num_N-1):
         max_sum *= int_N[i+1]
     
 print(max_sum)
+
+# 정답지
+
+data = input()
+result = int(data[0])
+
+for i in range(1, len(data)):
+    num = int(data[i])
+    if num <= 1 or result <= 1:
+        result += num
+    else:
+        result *= num
+        
+print(result)
