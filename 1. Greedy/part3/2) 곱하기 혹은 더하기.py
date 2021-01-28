@@ -10,7 +10,7 @@ for i in range(num_N):
 #최대합 구하기, 다음 순서를 연산하는 방식으로
 max_sum = int_N[0]
 for i in range(num_N-1):
-    if int_N[i] == 0:
+    if int_N[i] == 0 or int_N[i] == 1:
         max_sum += int_N[i+1]
     else:
         max_sum *= int_N[i+1]
